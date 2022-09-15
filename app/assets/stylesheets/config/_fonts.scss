@@ -1,24 +1,22 @@
 // Import Google fonts
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-@import url('https://db.onlinewebfonts.com/c/bd6213fa49bedc8cb050c63f14360efa?family=Circular+Air+Book');
+// @import url('https://db.onlinewebfonts.com/c/bd6213fa49bedc8cb050c63f14360efa?family=Circular+Air+Book');
 
-@font-face {
-  font-family: "Circular Air Book";
-  src: url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.eot");
-  src: url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.woff") format("woff"), url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.svg#Circular Air Book") format("svg");
-}
+// @font-face {
+//   font-family: "Circular Air Book";
+//   src: url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.eot");
+//   src: url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.woff") format("woff"), url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bd6213fa49bedc8cb050c63f14360efa.svg#Circular Air Book") format("svg");
+// }
 
-// Define fonts for body and headers
-$body-font: 'Circular Air Book';
-$headers-font: 'Circular Air Book';
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+//   font-family: "Circular Air Book";
+//   src: font-url('app/assets/fonts/circular-air-pro-light.otf');
+//   src: font-url('FontFile.eot?#iefix') format('otf')
+//       }
+
+// Define fonts for body and headers
+$body-font: 'Inter', sans-serif;
+$headers-font: 'Circular Air Book';
