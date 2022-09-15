@@ -1,0 +1,101 @@
+<div class="home">
+  <div class="headerSection">
+    <div class="container">
+      <%= image_tag 'photo-maison.jpg', class: 'headerSection-image' %>
+      <div class="headerSection-intro">
+        <%= image_tag 'salle-a-manger-exterieure-mas-vermentino.png', class: 'headerSection-intro--image' %>
+        <div class="headerSection-intro--text">
+          <h1 id="ancreange">Agence DLF Immobilier</h1>
+          <p>L'engagement, le goût de l'autre, l'esprit de service sont mes valeurs, et
+            sont le reflet de mon identité et de mes ambitions.
+            Entre Lyon, berceau de ma famille et Tournon-sur-Rhône, ma ville depuis 25 ans,
+            j'apporte mon expérience de l'immobilier et du terrain, et mes compétences juridiques
+            à  chacun de mes clients, à travers une relation basée sur la confiance et l'écoute.
+          </p>
+          <br>
+          <p>Exigeante, je prends peu de biens à la vente.
+            Je vous accompagne, de l'estimation à la constitution de votre dossier de vente,
+            en passant par la publicité et la mise en valeur de votre bien.
+
+            Je propose des acquéreurs sélectionnés et assure le suivi administratif jusqu'à la signature définitive, tout en privilégiant une restitution constante des informations.
+            Je suis à votre disposition pour une collaboration sur mesure, à votre rythme.
+          </p>
+        </div>
+      </div>
+      <div class="headerSection-values">
+        <div class="headerSection-values--card">
+          <i class="fa-solid fa-lightbulb"></i>
+          <p>Savoir-faire</p>
+        </div>
+        <div class="headerSection-values--card">
+          <i class="fa-solid fa-user-group"></i>
+          <p>Disponibilité</p>
+        </div>
+        <div class="headerSection-values--card">
+          <i class="fa-solid fa-clock"></i>
+          <p>Réactivité</p>
+        </div>
+        <div class="headerSection-values--card">
+          <i class="fa-solid fa-handshake"></i>
+          <p>Transparence</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sectionGray salesSection" id="ancrevente">
+    <div class="container">
+      <h2 id="ancrevente" class="salesSection-title ">Vente</h2>
+      <div class="salesSection-text">
+      <p>Chaque vente est une histoire à construire ensemble.</p>
+      <p>Trouver l’acquéreur qui vous correspond, dans les meilleurs délais, est l’objectif de notre collaboration.
+          Pour cela, notre relation sera basée sur la confiance et un échange constant d’informations.
+      </p>
+      <div class="salesSection-cards">
+        <% @houses.each do |house| %>
+            <%= link_to house_path(house), class: 'houseCard' do %>
+              <%= image_tag 'photo-maison.jpg', class: 'houseCard-image' %>
+              <div class="houseCard-details">
+                <div class="houseCard-details--price"><%= number_with_delimiter(house.price, delimiter: " ") %> €</div>
+                <div>
+                  <div class="houseCard-title"><%= house.name %></div>
+                  <div class="houseCard-location">Chalençon - Ardèche</div>
+                </div>
+                <div class="houseCard-footer">
+                  <div class="houseCard-footer--content">
+                    <i class="fa-solid fa-house"></i>
+                    <p>400m2</p>
+                  </div>
+                  <div class="houseCard-footer--content">
+                    <i class="fa-solid fa-bed"></i>
+                    <p>4ch</p>
+                  </div>
+                  <div class="houseCard-footer--content">
+                    <i class="fa-solid fa-bath"></i>
+                    <p>2</p>
+                  </div>
+                  <div class="houseCard-footer--content">
+                    <i class="fa-solid fa-seedling"></i>
+                    <p>750m2</p>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="estimateSection">
+    <div class="container">
+      <h2 id="ancreestimation" class="estimateSection-title">Estimation gratuite</h2>
+      <div class="estimateSection-text">
+        <p>Une estimation juste de votre bien est la base d'une bonne transaction.
+        Un vendeur a tendance à surestimer son bien, tandis qu'un acquéreur le trouvera
+        toujours trop cher.</p>
+        <p>Cette estimation professionnelle est une étape cruciale de votre projet de vente,
+        permettant à celui-ci d'aboutir dans les meilleures conditions.</p>
+      </div>
+      <a href="mailto:delphine@dlf.immo" class="main-button">Je demande mon estimation</a>
+    </div>
+  </div>
+</div>

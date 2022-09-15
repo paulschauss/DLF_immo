@@ -1,0 +1,32 @@
+<%= image_tag 'photo-maison-2.jpg', class: 'houseCard-image' %>
+<h1><%= @house.name %></h1>
+<div class="houseCard-location">Chalençon - Ardèche</div>
+  <div class="houseCard-footer">
+    <div class="houseCard-footer--content">
+      <i class="fa-solid fa-house"></i>
+      <p>400m2</p>
+    </div>
+    <div class="houseCard-footer--content">
+      <i class="fa-solid fa-bed"></i>
+      <p>4ch</p>
+    </div>
+    <div class="houseCard-footer--content">
+      <i class="fa-solid fa-bath"></i>
+      <p>2</p>
+    </div>
+    <div class="houseCard-footer--content">
+      <i class="fa-solid fa-seedling"></i>
+      <p>750m2</p>
+    </div>
+  </div>
+
+<p>Type: <%= @house.house_type %></p>
+<p>Description: <%= @house.description %></p>
+<p>Prix: <%= @house.price %>€</p>
+<p>Surface: <%= @house.area %>m2</p>
+<p>Nb de lit: <%= @house.bed %></p>
+<p>Nb de sdb: <%= @house.bathroom %></p>
+<p>Surface extérieur: <%= @house.outdoor_area %>m2</p>
+<%#= cl_image_tag @house.photo.key, alt: "Une photo de la maison ou de l'appartement", height: 300, width: 400, crop: :fill %>
+
+<%= link_to "Back", root_path %>

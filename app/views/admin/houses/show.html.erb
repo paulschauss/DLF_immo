@@ -1,0 +1,11 @@
+<h1>Nom: <%= @house.name %></h1>
+<p>Type: <%= @house.house_type %></p>
+<p>Description: <%= @house.description %></p>
+<p>Prix: <%= @house.price %>€</p>
+<p>Surface: <%= @house.area %>m2</p>
+<p>Nb de lit: <%= @house.bed %></p>
+<p>Nb de sdb: <%= @house.bathroom %></p>
+<p>Surface extérieur: <%= @house.outdoor_area %>m2</p>
+
+<%= link_to 'Edit', edit_admin_house_path %>
+<%= link_to "Back", admin_root_path %>
