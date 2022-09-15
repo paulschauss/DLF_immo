@@ -1,0 +1,14 @@
+.alert {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000;
+  &.success {
+    background-color: $orange;
+    color: $white;
+  }
+  &.error {
+    background-color: $red;
+    color: $white;
+  }
+}

@@ -2,17 +2,24 @@
 <html>
   <head>
     <title>DLF Immobilier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Fonts -->
+    <link href="//db.onlinewebfonts.com/c/bd6213fa49bedc8cb050c63f14360efa?family=Circular+Air+Book" rel="stylesheet" type="text/css"/>
+
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <%= render "shared/flashes" %>
+    <%= render "shared/navbar" %>
 
     <%= yield %>
+
+    <%= render "shared/footer" %>
   </body>
 </html>

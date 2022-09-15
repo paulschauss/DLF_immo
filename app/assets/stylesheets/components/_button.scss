@@ -1,0 +1,12 @@
+.main-button {
+  background-color: $orange;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1.5rem 3rem;
+  border-radius: 2.5px;
+
+  &:hover {
+    color: $white;
+  }
+}

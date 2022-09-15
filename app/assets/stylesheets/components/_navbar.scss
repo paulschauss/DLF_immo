@@ -1,0 +1,49 @@
+nav{
+  background-color: $orange;
+}
+
+nav ul {
+  display: none;
+}
+
+.logo {
+  margin: auto;
+  height: 100px;
+  background-color: $orange;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  z-index: 6;
+}
+
+@media (min-width: $breakpoint-lg) {
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    margin: 10px;
+    display: block;
+    margin-top: 35px;
+  }
+
+  nav a:hover {
+    color: $kaki;
+  }
+
+  .logo{
+    margin: 0;
+  }
+}

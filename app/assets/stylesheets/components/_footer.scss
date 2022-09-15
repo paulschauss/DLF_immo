@@ -1,0 +1,70 @@
+.logofooter {
+  display: none;
+}
+.photoportrait {
+  display: none;
+}
+.footer {
+  background-color: $kaki;
+  padding-top: 30px;
+  color: $white;
+
+  &-center {
+    padding-top: 2%;
+    text-align: center;
+  }
+
+  &-logo {
+    width: 70%;
+  }
+}
+
+.menuFooter {
+  &-title {
+      color: $orange;
+      text-transform: uppercase;
+      padding-bottom: 5%;
+      font-weight: 500;
+    }
+
+  &-social {
+    padding-top: 10%;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style-type: none;
+    font-weight: 300;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.sectionfooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.blocdroitfooter {
+  display: flex;
+}
+@media (min-width: $breakpoint-md) {
+ .logofooter{
+  display: block;
+ }
+.photoportrait{
+    padding-left: 15%;
+    height: 170px;
+    display: block;
+}
+}
