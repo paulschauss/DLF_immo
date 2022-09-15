@@ -10,7 +10,7 @@
           <div class="salesSection-cards">
             <% @houses.each do |house| %>
               <div class="houseCard">
-                <%= image_tag 'flat-1.jpg', class: 'houseCard-image' %>
+                <%= image_tag 'photo-maison.jpg', class: 'houseCard-image' %>
                 <div class="houseCard-details">
                   <div class="houseCard-details--price"><%= number_with_delimiter(house.price, delimiter: " ") %> €</div>
                   <div>
