@@ -112,10 +112,8 @@ h1
   }
 
   .estimateSection {
-    margin-top: 2.5rem;
     padding: 4rem 0;
     text-align: center;
-    background-color: $white;
 
     &-title {
       color: $orange;
@@ -128,6 +126,26 @@ h1
       p {
         margin-bottom: 1rem;
       }
+    }
+  }
+}
+
+.searchSection {
+  margin-top: 2.5rem;
+  padding: 4rem 0;
+  text-align: center;
+  background-color: $white;
+
+  &-title {
+    color: $orange;
+    margin-bottom: 2rem;
+  }
+
+  &-text {
+    margin-bottom: 4rem;
+
+    p {
+      margin-bottom: 1rem;
     }
   }
 }
