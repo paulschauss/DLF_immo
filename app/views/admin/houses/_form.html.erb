@@ -1,12 +1,13 @@
-<%= simple_form_for [:admin, house] do |f| %>
-  <%= f.input :name %>
-  <%= f.input :house_type %>
-  <%= f.input :description %>
-  <%= f.input :price %>
-  <%= f.input :area %>
-  <%= f.input :bed %>
-  <%= f.input :bathroom %>
-  <%= f.input :outdoor_area %>
-  <%= f.input :photo, as: :file %>
-  <%= f.button :submit %>
-<% end %>
+<div class="container">
+  <%= simple_form_for [:admin, house] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :house_type %>
+    <%= f.input :price %>
+    <%= f.input :area %>
+    <%= f.input :bed %>
+    <%= f.input :bathroom %>
+    <%= f.input :outdoor_area %>
+    <%= f.input :photo, as: :file %>
+    <%= f.button :submit %>
+  <% end %>
+</div>

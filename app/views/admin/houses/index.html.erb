@@ -10,7 +10,7 @@
           <div class="salesSection-cards">
             <% @houses.each do |house| %>
               <div class="houseCard">
-                <%= image_tag 'photo-maison.jpg', class: 'houseCard-image' %>
+                  <%= cl_image_tag house.photo.key, class: 'houseCard-image', alt: "Photo d'une maison ou appartement de DLF Immobilier", height: 250, width: 300, crop: :fill %>
                 <div class="houseCard-details">
                   <div class="houseCard-details--price"><%= number_with_delimiter(house.price, delimiter: " ") %> €</div>
                   <div>
