@@ -1,5 +1,5 @@
 class House < ApplicationRecord
-  # has_one_attached :photo
+  has_one_attached :photo
   # validates :name, presence: true, length: { maximum: 25 }
   # validates :house_type, presence: true, inclusion: { in: %w[Maison Appartement Immeuble] }
   # validates :description, presence: true, length: { maximum: 500 }

@@ -20,8 +20,8 @@
                 </div>
                 <div class="houseCard-footer">
                   <%= link_to 'Voir', house_path(house), class: 'houseCard-title' %>
-                  <%= link_to 'Edit', edit_admin_house_path(house), class: 'houseCard-title' %>
-                  <%= link_to 'Delete', admin_house_path(house), method: :delete, data: { confirm: 'Are you sure?' }, class: 'houseCard-title' %>
+                  <%= link_to 'Modifier', edit_admin_house_path(house), class: 'houseCard-title' %>
+                  <%= link_to 'Supprimer', admin_house_path(house), method: :delete, data: { confirm: 'Are you sure?' }, class: 'houseCard-title' %>
                 </div>
               </div>
             <% end %>
