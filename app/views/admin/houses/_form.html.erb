@@ -1,36 +1,55 @@
 <div class="houseNew-form">
+
   <%= simple_form_for [:admin, house] do |f| %>
 
-    <div class="field">
-      <%= f.input :name, label: 'Nom' %>
-    </div>
+    <div class="row">
+      <div class="field">
+        <%= f.input :name, label: 'Nom' %>
+      </div>
 
-    <div class="field">
-      <%= f.input :house_type, label: 'Type de bien', collection: %w[Maison Appartement Immeuble] %>
-    </div>
+      <div class="right col-sm">
+        <div class="field">
+          <%= f.input :price, label: 'Prix' %>
+        </div>
 
-    <div class="field">
-      <%= f.input :price, label: 'Prix' %>
-    </div>
+        <div class="field">
+          <%= f.input :city, label: 'Ville' %>
+        </div>
 
-    <div class="field">
-      <%= f.input :area, label: 'Surface intérieur' %>
-    </div>
+        <div class="field">
+          <%= f.input :area, label: 'Surface intérieur' %>
+        </div>
 
-    <div class="field">
-      <%= f.input :bed, label: 'Nombre de chambre' %>
-    </div>
+        <div class="field">
+          <%= f.input :bed, label: 'Nombre de chambre' %>
+        </div>
+      </div>
 
-    <div class="field">
-      <%= f.input :bathroom, label: 'Nombre de salle de bain'%>
-    </div>
+      <div class="left col-sm">
+        <div class="field">
+          <%= f.input :house_type, label: 'Type de bien', collection: %w[Maison Appartement Immeuble] %>
+        </div>
 
-    <div class="field">
-      <%= f.input :outdoor_area, label: 'Surface extérieur' %>
-    </div>
+        <div class="field">
+          <%= f.input :region, label: 'Région' %>
+        </div>
 
-    <div class="field">
-      <%= f.input :photo, as: :file, label: 'Photo de couverture :' %>
+        <div class="field">
+          <%= f.input :outdoor_area, label: 'Surface extérieur' %>
+        </div>
+
+
+        <div class="field">
+          <%= f.input :bathroom, label: 'Nombre de salle de bain'%>
+        </div>
+
+
+
+
+      </div>
+        <div class="field">
+          <%= f.input :photo, as: :file, label: 'Photo de couverture :' %>
+        </div>
     </div>
 
     <div class="houseNew-form--button">

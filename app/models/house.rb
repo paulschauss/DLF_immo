@@ -9,4 +9,6 @@ class House < ApplicationRecord
   validates :bed, presence: true
   validates :bathroom, presence: true
   validates :outdoor_area, presence: true
+  validates :city, presence: true
+  validates :region, presence: true
 end

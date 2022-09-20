@@ -54,29 +54,29 @@
       <div class="salesSection-cards">
         <% @houses.each do |house| %>
             <%= link_to house_path(house), class: 'houseCard' do %>
-            <%= image_tag house.photo, class: 'houseCard-image' %>
+            <%= image_tag house.photo, class: 'houseCard-image', width: 400, height: 300, crop: :fill %>
               <div class="houseCard-details">
                 <div class="houseCard-details--price"><%= number_with_delimiter(house.price, delimiter: " ") %> €</div>
                 <div>
                   <div class="houseCard-title"><%= house.name %></div>
-                  <div class="houseCard-location">Chalençon - Ardèche</div>
+                  <div class="houseCard-location"><%= house.house_type %> à <%= house.city %>, <%= house.region %></div>
                 </div>
                 <div class="houseCard-footer">
                   <div class="houseCard-footer--content">
                     <i class="fa-solid fa-house"></i>
-                    <p>400m2</p>
+                    <p><%= house.area %>m²</p>
                   </div>
                   <div class="houseCard-footer--content">
                     <i class="fa-solid fa-bed"></i>
-                    <p>4ch</p>
+                    <p><%= house.bed %>ch</p>
                   </div>
                   <div class="houseCard-footer--content">
                     <i class="fa-solid fa-bath"></i>
-                    <p>2</p>
+                    <p><%= house.bathroom %></p>
                   </div>
                   <div class="houseCard-footer--content">
                     <i class="fa-solid fa-seedling"></i>
-                    <p>750m2</p>
+                    <p><%= house.outdoor_area %>m2</p>
                   </div>
                 </div>
               </div>

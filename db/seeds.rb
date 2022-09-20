@@ -16,11 +16,13 @@ House.destroy_all
 puts 'Creating houses...'
 house1 = House.new(
   name: 'Maison de la Fontaine',
-  house_type: 'House',
+  house_type: 'Maison',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
   nisl sit amet aliquam lacinia, nunc nisl aliquam mauris, quis aliquam nisl nisl sit
   amet lorem. Sed euismod, nisl sit amet aliquam lacinia, nunc nisl aliquam mauris, quis
   aliquam nisl nisl sit amet lorem.',
+  city: 'Paris',
+  region: 'Île-de-France',
   price: 1_000_000,
   area: 100,
   bed: 3,
@@ -35,11 +37,13 @@ p "#{house1.name} created!"
 
 house2 = House.new(
   name: 'Mas provinçal',
-  house_type: 'House',
+  house_type: 'Maison',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
     nisl sit amet aliquam lacinia, nunc nisl aliquam mauris, quis aliquam nisl nisl sit
     amet lorem. Sed euismod, nisl sit amet aliquam lacinia, nunc nisl aliquam mauris, quis
     aliquam nisl nisl sit amet lorem.',
+  city: 'Paris',
+  region: 'Île-de-France',
   price: 2_000_000,
   area: 200,
   bed: 4,
@@ -53,12 +57,14 @@ house2.save!
 p "#{house2.name} created!"
 
 house3 = House.new(
-  name: 'Appartement de charme',
-  house_type: 'House',
+  name: 'Le Splendide',
+  house_type: 'Maison',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
     nisl sit amet aliquam lacinia, nunc nisl aliquam mauris, quis aliquam nisl nisl sit
     amet lorem. Sed euismod, nisl sit amet aliquam lacinia, nunc nisl aliquam mauris, quis
     aliquam nisl nisl sit amet lorem.',
+  city: 'Paris',
+  region: 'Île-de-France',
   price: 300_000,
   area: 300,
   bed: 5,
@@ -74,11 +80,13 @@ p "#{house3.name} created!"
 
 appartment1 = House.new(
   name: 'Maison vue dégagée',
-  house_type: 'Appartment',
+  house_type: 'Appartement',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
     nisl sit amet aliquam lacinia, nunc nisl aliquam mauris, quis aliquam nisl nisl sit
     amet lorem. Sed euismod, nisl sit amet aliquam lacinia, nunc nisl aliquam mauris, quis
     aliquam nisl nisl sit amet lorem.',
+  city: 'Paris',
+  region: 'Île-de-France',
   price: 400_000,
   area: 400,
   bed: 6,
@@ -93,12 +101,14 @@ appartment1.save!
 p "#{appartment1.name} created!"
 
 appartment2 = House.new(
-  name: 'Appartement typique',
-  house_type: 'Appartment',
+  name: 'Le loft',
+  house_type: 'Appartement',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
     nisl sit amet aliquam lacinia, nunc nisl aliquam mauris, quis aliquam nisl nisl sit
     amet lorem. Sed euismod, nisl sit amet aliquam lacinia, nunc nisl aliquam mauris, quis
     aliquam nisl nisl sit amet lorem.',
+  city: 'Paris',
+  region: 'Île-de-France',
   price: 200_000,
   area: 400,
   bed: 6,
