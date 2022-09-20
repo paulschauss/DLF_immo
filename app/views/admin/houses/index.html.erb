@@ -2,31 +2,48 @@
   <div class="headerSection">
     <div class="container">
       <h1>Bienvenue sur l'admin <%= current_user.email %></h1>
-      <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
       <h3>Voici la liste des appartements :</h3>
-      <%= link_to 'Créer un nouveau bien', new_admin_house_path %>
-      <div class="sectionGray salesSection">
-        <div class="container">
-          <div class="salesSection-cards">
-            <% @houses.each do |house| %>
-              <div class="houseCard">
-                  <%= cl_image_tag house.photo.key, class: 'houseCard-image', alt: "Photo d'une maison ou appartement de DLF Immobilier", height: 250, width: 300, crop: :fill %>
-                <div class="houseCard-details">
-                  <div class="houseCard-details--price"><%= number_with_delimiter(house.price, delimiter: " ") %> €</div>
-                  <div>
-                    <div class="houseCard-title"><%= house.name %></div>
-                    <div class="houseCard-location">Chalençon - Ardèche</div>
-                  </div>
+      <div class="salesSection-cards">
+        <% @houses.each do |house| %>
+          <div class="houseCard">
+            <div class="cardIndex">
+              <%= image_tag house.photo, class: 'houseCard-image', width: 400, height: 300, crop: :fill %>
+              <div class="indexIcons">
+                <%= link_to edit_admin_house_path(house) do %>
+                  <i class="fa-solid fa-pen-to-square"></i>
+                <% end %>
+                <%= link_to admin_house_path(house), method: :delete, data: { confirm: 'Are you sure?' } do %>
+                  <i class="fa-solid fa-trash-can"></i>
+                <% end %>
+              </div>
+            </div>
+            <div class="houseCard-details">
+              <div class="houseCard-details--price"><%= number_with_delimiter(house.price, delimiter: " ") %> €</div>
+              <div>
+                <div class="houseCard-title"><%= house.name %></div>
+                <div class="houseCard-location"><%= house.house_type %> à <%= house.city %>, <%= house.region %></div>
+              </div>
+              <div class="houseCard-footer">
+                <div class="houseCard-footer--content">
+                  <i class="fa-solid fa-house"></i>
+                  <p><%= house.area %>m²</p>
                 </div>
-                <div class="houseCard-footer">
-                  <%= link_to 'Voir', house_path(house), class: 'houseCard-title' %>
-                  <%= link_to 'Modifier', edit_admin_house_path(house), class: 'houseCard-title' %>
-                  <%= link_to 'Supprimer', admin_house_path(house), method: :delete, data: { confirm: 'Are you sure?' }, class: 'houseCard-title' %>
+                <div class="houseCard-footer--content">
+                  <i class="fa-solid fa-bed"></i>
+                  <p><%= house.bed %>ch</p>
+                </div>
+                <div class="houseCard-footer--content">
+                  <i class="fa-solid fa-bath"></i>
+                  <p><%= house.bathroom %></p>
+                </div>
+                <div class="houseCard-footer--content">
+                  <i class="fa-solid fa-seedling"></i>
+                  <p><%= house.outdoor_area %>m2</p>
                 </div>
               </div>
-            <% end %>
+            </div>
           </div>
-        </div>
+        <% end %>
       </div>
     </div>
   </div>

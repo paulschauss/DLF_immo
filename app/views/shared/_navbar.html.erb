@@ -11,11 +11,16 @@
     </ul>
   </div>
   <ul id="menu">
-    <li><a href="#ancreagence">Agence</a></li>
-    <li><a href="#ancrevente">Vente</a></li>
-    <li><a href="#ancrerecherche">Recherche</a></li>
-    <li><a href="#ancreestimation">Estimation</a></li>
-    <li><a href="#ancrecontact">Contact</a></li>
+    <% if request.url.include?("admin") %>
+      <li><%= link_to 'Créer un bien', new_admin_house_path %></li>
+      <li><%= link_to "Se déconnecter", destroy_user_session_path, method: :delete %></li>
+    <% else %>
+      <li><a href="#ancreagence">Agence</a></li>
+      <li><a href="#ancrevente">Vente</a></li>
+      <li><a href="#ancrerecherche">Recherche</a></li>
+      <li><a href="#ancreestimation">Estimation</a></li>
+      <li><a href="#ancrecontact">Contact</a></li>
+    <% end %>
   </ul>
 </nav>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
