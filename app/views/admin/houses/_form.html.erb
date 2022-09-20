@@ -6,7 +6,7 @@
     </div>
 
     <div class="field">
-      <%= f.input :house_type, label: 'Type de bien' %>
+      <%= f.input :house_type, label: 'Type de bien', collection: %w[Maison Appartement Immeuble] %>
     </div>
 
     <div class="field">
@@ -18,7 +18,7 @@
     </div>
 
     <div class="field">
-      <%= f.input :bed, label: 'Nombre de lit' %>
+      <%= f.input :bed, label: 'Nombre de chambre' %>
     </div>
 
     <div class="field">
