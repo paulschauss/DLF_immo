@@ -7,6 +7,10 @@
         <%= f.input :name, label: 'Nom' %>
       </div>
 
+      <div class="field">
+        <%= f.input :state, label: 'Statut', collection: ["A vendre", "En cours de vente", "Vendu"] %>
+      </div>
+
       <div class="right col-sm">
         <div class="field">
           <%= f.input :price, label: 'Prix' %>

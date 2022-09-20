@@ -43,7 +43,7 @@ module Admin
     def house_params
       params.require(:house).permit(:name, :house_type, :description, :price, :area,
                                     :bed, :bathroom, :outdoor_area, :city, :region,
-                                    :photo)
+                                    :state, :photo)
     end
   end
 end

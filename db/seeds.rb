@@ -27,7 +27,8 @@ house1 = House.new(
   area: 100,
   bed: 3,
   bathroom: 2,
-  outdoor_area: 50
+  outdoor_area: 50,
+  state: 'Vendu'
 )
 file = URI.open('https://images.unsplash.com/photo-1603033867289-91297711d184?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80')
 house1.photo.attach(io: file, filename: 'house1.jpg', content_type: 'image/jpg')
@@ -48,7 +49,8 @@ house2 = House.new(
   area: 200,
   bed: 4,
   bathroom: 3,
-  outdoor_area: 100
+  outdoor_area: 100,
+  state: 'A vendre'
 )
 file = URI.open('https://images.unsplash.com/photo-1603033867289-91297711d184?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80')
 house2.photo.attach(io: file, filename: 'house2.jpg', content_type: 'image/jpg')
@@ -69,7 +71,8 @@ house3 = House.new(
   area: 300,
   bed: 5,
   bathroom: 4,
-  outdoor_area: 150
+  outdoor_area: 150,
+  state: 'En cours de vente'
 )
 
 file = URI.open('https://images.unsplash.com/photo-1603033867289-91297711d184?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80')
@@ -91,7 +94,8 @@ appartment1 = House.new(
   area: 400,
   bed: 6,
   bathroom: 2,
-  outdoor_area: 0
+  outdoor_area: 0,
+  state: 'A vendre'
 )
 
 file = URI.open('https://images.unsplash.com/photo-1603033867289-91297711d184?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80')
@@ -113,7 +117,8 @@ appartment2 = House.new(
   area: 400,
   bed: 6,
   bathroom: 5,
-  outdoor_area: 200
+  outdoor_area: 200,
+  state: 'En cours de vente'
 )
 
 file = URI.open('https://images.unsplash.com/photo-1603033867289-91297711d184?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80')

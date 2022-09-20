@@ -3,16 +3,26 @@
 
 // For example:
 $blue: #0D6EFD;
-$light-gray: #F4F4F4;
-$middle-gray: #b9b9b9;
+
+$light-gray: rgb(244, 244, 244);
+$middle-gray: rgb(185, 185, 185);
+$light-gray-transparent: rgba(244, 244, 244, .9);
 
 $white: #FFFFFF;
+
 $black: #000000;
+
 $gray: #525E4F;
 $gray-light: #F3F3F3;
+
 $orange: #EB5E26;
 $orange-transparent: rgba(235, 94, 38, 0.75);
+
 $green: #60d394;
+
 $yellow: #ffba08;
+
 $red: #bd4646;
+
 $kaki: #525E4F;
+$kaki-transparent: rgba(82, 94, 79, 0.8);

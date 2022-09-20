@@ -113,6 +113,27 @@
         grid-template-columns: repeat(3, 1fr);
       }
     }
+
+    &-stateWithImage {
+      position: relative;
+
+      img {
+        display: block;
+      }
+
+      p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.5rem;
+        margin: 0.6rem;
+        font-size: 1rem;
+        color: $gray-light;
+        background-color: $orange-transparent;
+        border-radius: 5%;
+      }
+    }
+
   }
 
 
