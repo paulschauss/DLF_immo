@@ -1,4 +1,11 @@
-<div class="container">
-  <%= render "form", house: @house %>
-  <%= link_to 'Annuler', admin_houses_path %>
+<div class="houseNew">
+  <div class="row justify-content-center">
+    <div class="col-8 col-sm-8">
+      <div class="houseNew-bloc">
+        <h2>Ajouter un bien</h2>
+        <%= render "form", house: @house %>
+        <%= link_to 'Annuler', admin_houses_path %>
+      </div>
+    </div>
+  </div>
 </div>
