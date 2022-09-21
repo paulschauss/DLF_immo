@@ -7,13 +7,15 @@
         <% @houses.each do |house| %>
           <div class="houseCard">
             <div class="cardIndex">
-              <p><%= house.state %></p>
+              <% if house.state.present? %>
+                <p><%= house.state %></p>
+              <% end %>
               <%= image_tag house.photo, class: 'houseCard-image', width: 400, height: 300, crop: :fill %>
               <div class="indexIcons">
                 <%= link_to edit_admin_house_path(house) do %>
                   <i class="fa-solid fa-pen-to-square"></i>
                 <% end %>
-                <%= link_to admin_house_path(house), method: :delete, data: { confirm: 'Are you sure?' } do %>
+                <%= link_to admin_house_path(house), method: :delete, data: { confirm: 'Êtes-vous sûr ?' } do %>
                   <i class="fa-solid fa-trash-can"></i>
                 <% end %>
               </div>
