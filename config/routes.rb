@@ -3,8 +3,6 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
   get 'mentions-legales', to: 'pages#mentions'
-  resources :houses, only: [:show]
-
 
   # ADMIN SPACE
 
