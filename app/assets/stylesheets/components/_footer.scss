@@ -52,19 +52,24 @@
 .sectionfooter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 1rem 0 1rem;
+
+  @media (min-width: $breakpoint-md) {
+      margin: 0 10rem 0 10rem;
+    }
 }
 
 .blocdroitfooter {
   display: flex;
 }
 @media (min-width: $breakpoint-md) {
- .logofooter{
-  display: block;
- }
-.photoportrait{
-    padding-left: 15%;
-    height: 170px;
+  .logofooter{
     display: block;
-}
+  }
+  .photoportrait{
+      padding-left: 15%;
+      height: 170px;
+      display: block;
+  }
 }

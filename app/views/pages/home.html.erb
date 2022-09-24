@@ -1,9 +1,9 @@
 <div class="home">
   <div class="headerSection">
     <div class="container">
-      <%= image_tag 'photo-maison.jpg', class: 'headerSection-image' %>
+      <%= image_tag 'photo-principal-dlf-immo.jpg', class: 'headerSection-image', alt: 'photo principal maison dlf immobilier à Tournon sur Rhônes' %>
       <div class="headerSection-intro">
-        <%= image_tag 'salle-a-manger-exterieure-mas-vermentino.png', class: 'headerSection-intro--image' %>
+        <%= image_tag 'salle-a-manger-exterieure-mas-vermentino.png', class: 'headerSection-intro--image', alt: "photo secondaire d'une maison dlf immobilier à Tournon sur Rhônes" %>
         <div class="headerSection-intro--text">
           <h1 id="ancreange">Agence DLF Immobilier</h1>
           <p>L'engagement, le goût de l'autre, l'esprit de service sont mes valeurs, et
@@ -56,7 +56,8 @@
           <div class="houseCard">
             <div class="salesSection-stateWithImage">
               <p><%= house.state %></p>
-              <%= image_tag house.photo, class: 'houseCard-image', width: 400, height: 300, crop: :fill %>
+              <%= image_tag house.photo, class: 'houseCard-image', width: 400, height: 300, crop: :fill,
+                  alt: "Photo d'un appartement ou d'une maison à vendre par dlf immobilier dans la région de Tournon sur Rhônes" %>
             </div>
             <div class="houseCard-details">
               <div class="houseCard-details--price"><%= number_with_delimiter(house.price, delimiter: " ") %> €</div>
@@ -105,7 +106,10 @@
             Je vous accompagne pour la négociation et jusqu'à la signature de la vente.
             Je peux vous assister dans l'organisation de votre emménagement (travaux, déménagement …)
           </p>
-          <%= image_tag 'photo-maison.jpg', class: 'searchSection-image' %>
+          <%= image_tag 'photo-principal-dlf-immo.jpg',
+                class: 'searchSection-image',
+                alt: "Photo illustrant une maison correspondant aux type d'appartements ou de maisons que dlf immobilier
+                     peut rechercher pour vous et vous trouver dans la région de Tournon sur Rhônes" %>
         </div>
       </div>
     </div>

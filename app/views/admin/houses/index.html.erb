@@ -10,7 +10,7 @@
               <% if house.state.present? %>
                 <p><%= house.state %></p>
               <% end %>
-              <%= image_tag house.photo, class: 'houseCard-image', width: 400, height: 300, crop: :fill %>
+              <%= image_tag house.photo, alt: "photo d'une maison ou d'un appartement à vendre par DLF immobilier à Tournon sur Rhônes", class: 'houseCard-image', width: 400, height: 300, crop: :fill %>
               <div class="indexIcons">
                 <%= link_to edit_admin_house_path(house) do %>
                   <i class="fa-solid fa-pen-to-square"></i>
