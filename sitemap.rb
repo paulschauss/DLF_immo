@@ -11,5 +11,5 @@ SitemapGenerator::Sitemap.create do
   add '/admin/houses', :changefreq => 'daily', :priority => 0.9
   add '/admin/houses/new', :changefreq => 'daily', :priority => 0.9
   add '/admin/houses/:id/edit', :changefreq => 'daily', :priority => 0.9
-  add '/contact_us', :changefreq => 'weekly'
+  add '/admin/houses/:id', :changefreq => 'daily', :priority => 0.9
 end
