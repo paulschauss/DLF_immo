@@ -49,13 +49,13 @@
          tout en privilégiant une restitution constante des informations.
          Si vous le souhaitez, ma mission peut se prolonger avec votre emménagement (déménagement, suivi de vos travaux …)</p>
       <p>Je suis à votre disposition pour une collaboration sur mesure, à votre rythme.</p>
-
+      <br>
       <div class="salesSection-cards">
         <% @houses.each do |house| %>
           <div class="houseCard">
             <div class="salesSection-stateWithImage">
               <p><%= house.state %></p>
-              <%= image_tag house.photo, class: 'houseCard-image', width: 400, height: 300, crop: :fill,
+              <%#= image_tag house.photo, class: 'houseCard-image', width: 400, height: 300, crop: :fill,
                   alt: "Photo d'un appartement ou d'une maison à vendre par dlf immobilier dans la région de Tournon sur Rhônes" %>
             </div>
             <div class="houseCard-details">
@@ -95,16 +95,19 @@
       <div class="searchSection-intro">
         <div class="searchSection-text">
           <p>
-            La recherche d'un bien peut se révéler complexe et chronophage. Confier un mandat de
-            recherche offre un gain de temps et une approche professionnelle à votre projet.
-            Nous pouvons déterminer  ensemble le bien idéal pour vous, en termes de localisation, d'environnement, de prix.
+            Une estimation juste de votre bien est la base d'une bonne transaction.
+            Un vendeur a tendance à surestimer son bien, tandis qu'un acquéreur le trouvera toujours trop cher.
           </p>
-          <br>
-          <p>
-            Je cherche et vous présente des biens correspondant à vos attentes.
-            Je vous accompagne pour la négociation et jusqu'à la signature de la vente.
-            Je peux vous assister dans l'organisation de votre emménagement (travaux, déménagement …)
-          </p>
+          <ul>
+            <p>
+              Chaque bien est unique et nécessite une analyse objective selon des critères précis :
+            </p>
+            <li>localisation,</li>
+            <li>prix des biens vendus dans le secteur,</li>
+            <li>comportement du marché immobilier (offre et demande) au moment de l'évaluation</li>
+          </ul>
+          <p>Cette estimation professionnelle est une étape cruciale de votre projet de vente, permettant à celui-ci
+             d'aboutir dans les meilleures conditions.</p>
           <%= image_tag 'photo-principal-dlf-immo.jpg',
                 class: 'searchSection-image',
                 alt: "Photo illustrant une maison correspondant aux type d'appartements ou de maisons que dlf immobilier
@@ -120,11 +123,17 @@
         <div>
           <h2 id="ancreestimation" class="estimateSection-title">Estimation</h2>
           <div class="estimateSection-text">
-            <p>Une estimation juste de votre bien est la base d'une bonne transaction.
-            Un vendeur a tendance à surestimer son bien, tandis qu'un acquéreur le trouvera
-            toujours trop cher.</p>
-            <p>Cette estimation professionnelle est une étape cruciale de votre projet de vente,
-            permettant à celui-ci d'aboutir dans les meilleures conditions.</p>
+            <p>
+              La recherche d'un bien peut se révéler complexe et chronophage.
+              Confier un mandat de recherche offre un gain de temps et une approche professionnelle à votre projet.
+            </p>
+            <ul>
+              <li>Détermination du  bien idéal pour vous, en termes de localisation, d'environnement, de prix.</li>
+              <li>La garantie de visiter uniquement des biens qui correspondent à vos attentes</li>
+              <li>Un achat réalisé dans un délai plus court (de la négociation à la signature définitive)</li>
+              <li>Un prix d'acquisition préalablement déterminé</li>
+              <li>La possibilité d'un accompagnement jusqu'à votre emménagement (travaux, déménagement…)</li>
+            </ul>
           </div>
         </div>
         <div>
