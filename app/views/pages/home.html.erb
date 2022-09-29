@@ -5,7 +5,7 @@
       <div class="headerSection-intro">
         <%= image_tag 'salle-a-manger-exterieure-mas-vermentino.png', class: 'headerSection-intro--image', alt: "photo secondaire d'une maison dlf immobilier à Tournon sur Rhônes" %>
         <div class="headerSection-intro--text">
-          <h1 id="ancreange">Agence DLF Immobilier</h1>
+          <h1 id="ancreagence">Agence DLF.Immobilier</h1>
           <p>L'humain est au coeur de mon métier.</p>
           <p>L' engagement, le goût de l'autre, l'esprit de service sont mes valeurs, et le reflet de mon identité et de
              mes ambitions.
@@ -54,8 +54,8 @@
         <% @houses.each do |house| %>
           <div class="houseCard">
             <div class="salesSection-stateWithImage">
-              <p><%= house.state %></p>
-              <%= image_tag house.photo, class: 'houseCard-image', width: 400, height: 300, crop: :fill,
+              <p><%= house.state.upcase %></p>
+              <%#= image_tag house.photo, class: 'houseCard-image', width: 400, height: 300, crop: :fill,
                   alt: "Photo d'un appartement ou d'une maison à vendre par dlf immobilier dans la région de Tournon sur Rhônes" %>
             </div>
             <div class="houseCard-details">
@@ -91,24 +91,21 @@
 
   <div class="searchSection">
     <div class="container">
-      <h2 id="ancresearch" class="searchSection-title">Recherche</h2>
+      <h2 id="ancrerecherche" class="searchSection-title">Recherche</h2>
       <div class="searchSection-intro">
         <div class="searchSection-text">
           <p>
-            Une estimation juste de votre bien est la base d'une bonne transaction.
-            Un vendeur a tendance à surestimer son bien, tandis qu'un acquéreur le trouvera toujours trop cher.
+            La recherche d'un bien peut se révéler complexe et chronophage.
+            Confier un mandat de recherche offre un gain de temps et une approche professionnelle à votre projet.
           </p>
           <ul>
-            <p>
-              Chaque bien est unique et nécessite une analyse objective selon des critères précis :
-            </p>
-            <li>localisation,</li>
-            <li>prix des biens vendus dans le secteur,</li>
-            <li>comportement du marché immobilier (offre et demande) au moment de l'évaluation</li>
+            <li>Détermination du  bien idéal pour vous, en termes de localisation, d'environnement, de prix.</li>
+            <li>La garantie de visiter uniquement des biens qui correspondent à vos attentes</li>
+            <li>Un achat réalisé dans un délai plus court (de la négociation à la signature définitive)</li>
+            <li>Un prix d'acquisition préalablement déterminé</li>
+            <li>La possibilité d'un accompagnement jusqu'à votre emménagement (travaux, déménagement…)</li>
           </ul>
-          <p>Cette estimation professionnelle est une étape cruciale de votre projet de vente, permettant à celui-ci
-             d'aboutir dans les meilleures conditions.</p>
-          <%= image_tag 'photo-sales-dlf-immo.jpg',
+          <%= image_tag 'photo-dlf-immobilier-og.jpg',
                 class: 'searchSection-image',
                 alt: "Photo illustrant une maison correspondant aux type d'appartements ou de maisons que dlf immobilier
                      peut rechercher pour vous et vous trouver dans la région de Tournon sur Rhônes" %>
@@ -123,17 +120,20 @@
         <div>
           <h2 id="ancreestimation" class="estimateSection-title">Estimation</h2>
           <div class="estimateSection-text">
-            <p>
-              La recherche d'un bien peut se révéler complexe et chronophage.
-              Confier un mandat de recherche offre un gain de temps et une approche professionnelle à votre projet.
+            <p id="ancrecontact">
+              Une estimation juste de votre bien est la base d'une bonne transaction.
+              Un vendeur a tendance à surestimer son bien, tandis qu'un acquéreur le trouvera toujours trop cher.
             </p>
             <ul>
-              <li>Détermination du  bien idéal pour vous, en termes de localisation, d'environnement, de prix.</li>
-              <li>La garantie de visiter uniquement des biens qui correspondent à vos attentes</li>
-              <li>Un achat réalisé dans un délai plus court (de la négociation à la signature définitive)</li>
-              <li>Un prix d'acquisition préalablement déterminé</li>
-              <li>La possibilité d'un accompagnement jusqu'à votre emménagement (travaux, déménagement…)</li>
+              <p>
+                Chaque bien est unique et nécessite une analyse objective selon des critères précis :
+              </p>
+              <li>localisation,</li>
+              <li>prix des biens vendus dans le secteur,</li>
+              <li>comportement du marché immobilier (offre et demande) au moment de l'évaluation</li>
             </ul>
+            <p>Cette estimation professionnelle est une étape cruciale de votre projet de vente, permettant à celui-ci
+              d'aboutir dans les meilleures conditions.</p>
           </div>
         </div>
         <div>

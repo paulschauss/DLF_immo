@@ -1,7 +1,9 @@
 
 <nav class="nav">
-  <%= image_tag "logo-dlf-immo.png", alt: "Logo de l'agence immobilière DLF immo", class: "logo" %>
-   <div class="hamburger-container">
+  <%= link_to root_path, class: 'logo-link' do %>
+    <%= image_tag "logo-dlf-immo.png", alt: "Logo de l'agence immobilière DLF immo", class: "logo" %>
+  <% end %>
+  <div class="hamburger-container">
     <ul class="hamburger">
       <li></li>
       <li></li>
