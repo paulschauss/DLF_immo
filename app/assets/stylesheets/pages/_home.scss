@@ -140,7 +140,7 @@
   .searchSection {
     margin-top: 3.5rem;
     padding: 2rem 0;
-    text-align: left;
+    text-align: center;
     background-color: $white;
 
     ul {
@@ -163,6 +163,7 @@
     &-text {
 
       p {
+        text-align: left;
         margin-bottom: 1rem;
       }
     }
@@ -181,7 +182,7 @@
       object-fit: cover;
 
       @media (min-width: $breakpoint-md) {
-        height: 26.25rem;
+        height: 36.25rem;
       }
     }
   }
