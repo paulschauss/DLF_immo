@@ -73,3 +73,19 @@
       display: block;
   }
 }
+
+.copyrights {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  padding-bottom: 15px;
+
+  a {
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
