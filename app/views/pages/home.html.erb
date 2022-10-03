@@ -54,12 +54,18 @@
         <% @houses.each do |house| %>
           <div class="houseCard">
             <div class="salesSection-stateWithImage">
-              <p><%= house.state.upcase %></p>
+              <% if house.state != 'Vendu'  %>
+                <p><%= house.state.upcase %></p>
+              <% end %>
               <%= image_tag house.photo, class: 'houseCard-image', width: 400, height: 300, crop: :fill,
                   alt: "Photo d'un appartement ou d'une maison à vendre par dlf immobilier dans la région de Tournon sur Rhônes" %>
             </div>
             <div class="houseCard-details">
-              <div class="houseCard-details--price"><%= number_with_delimiter(house.price, delimiter: " ") %> €</div>
+              <% if house.state == 'Vendu'  %>
+                <div class="houseCard-details--price"><%= house.state.upcase %></div>
+              <% else %>
+                <div class="houseCard-details--price"><%= number_with_delimiter(house.price, delimiter: " ") %> €</div>
+              <% end %>
               <div>
                 <div class="houseCard-title"><%= house.name %></div>
                 <div class="houseCard-location"><%= house.house_type %> à <%= house.city %>, <%= house.region %></div>
