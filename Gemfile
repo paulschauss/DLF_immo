@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.4'
+ruby '3.1.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.0.5', '>= 6.0.5.1'
@@ -35,7 +35,7 @@ gem "devise"
 gem "font-awesome-sass", "~> 6.1"
 
 # Simple form gem for forms
-gem "simple_form", github: "heartcombo/simple_form"
+gem "simple_form"
 
 # Cloudinary gem for image upload
 gem "cloudinary", "~> 1.12.0"
