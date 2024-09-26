@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 # Devise gem for admin authentication
+gem 'psych', '< 4'
 gem 'devise'
 
 # Icon library
