@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 # Devise gem for admin authentication
-gem "devise"
+gem 'devise'
 
 # Icon library
 gem "font-awesome-sass", "~> 6.1"
